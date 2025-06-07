@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root{
+    --fonte-principal: 'DM Sans';
+    --fonte-nome: 'Belleza';
+    --branco-texto: #ffffff;
+    --preto-texto: #000000;
+    --verde-texto: #1A759F;
+    --verde-botoes: #34a0a4;
+    --cinza-texto: #525252;
+    --bege-fundo: #FFF5EB;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    background-image: url(assets/cabecalho_fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.nome-site{
+    font-family: var(--fonte-nome);
+    font-size: 40px;
+    color: var(--branco-texto);
+    position: absolute;
+    padding: 40px 0 0 50px;
+    text-shadow: 2px 2px 10px black;
+}
+
+.cabecalho__menu{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding-top: 55px;
+}
+
+.menu__itens{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--branco-texto);
+    text-decoration: none;
+    text-shadow: 2px 2px 10px black;
+}
+
+.menu__lupa{
+    position: absolute;
+    padding-left: 29%;
+}
+
+.cabecalho__slogan{
+    font-family: var(--fonte-principal);
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--branco-texto);
+    text-align: left;
+    padding: 130px 500px 0 250px;
+    text-shadow: 2px 2px 10px black;
+}
+
+.reservas{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bege-fundo);
+    gap: 4em;
+    padding: 48px;
+}
+
+.datas__botao{
+    display: flex;
+    gap: 8px;
+}
+
+.botao__texto{
+    font-family: var(--fonte-principal);
+    font-size: 13px;
+    color: var(--cinza-texto);
+    text-decoration: none;
+}
+
+.botao__reserva{
+    display: flex;
+    background-color: var(--verde-botoes);
+    border-radius: 25px;
+    padding: 10px 24px;
+    gap: 8px;
+    box-shadow: 4px 15px 30px rgba(0, 0, 0, 0.311);
+}
+
+.texto__reserva{
+    font-family: var(--fonte-principal);
+    color: var(--branco-texto);
+    text-decoration: none;
+    padding-top: 2px;
+}
+
+.inicio-corpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 0 80px 0;
+    gap: 8px;
+    background-color: var(--bege-fundo);
+}
+
+.corpo__titulo{
+    font-family: var(--fonte-principal);
+    font-size: 56px;
+    font-weight: 500;
+}
+
+.corpo__descricao{
+    font-family: var(--fonte-principal);
+    color: var(--cinza-texto);
+    font-size: 20px;
+}
+
+.maracajau{
+    display: flex;
+    background-color: var(--bege-fundo);
+    gap: 56px;
+    padding: 0 0 120px 70px;
+}
+
+.eletrobeach__foto,
+.maracajau__foto{
+    border-radius: 20px;
+}
+
+.maracajau__textos{
+    padding: 40px 56px 0 0;
+}
+
+.eletrobeach__local,
+.maracajau__local{
+    font-family: var(--fonte-principal);
+    color: var(--verde-texto);
+}
+
+.eletrobeach__nome,
+.maracajau__nome{
+    font-family: var(--fonte-principal);
+    font-size: 36px;
+}
+
+.eletrobeach__descricao,
+.maracajau__descricao{
+    font-family: var(--fonte-principal);
+    color: var(--cinza-texto);
+    padding-top: 24px;
+}
+
+.eletrobeach{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: var(--bege-fundo);
+    padding: 0 70px 160px 0;
+}
+
+.eletrobeach__textos{
+    padding: 40px 56px;
+}
+
+.folder{
+    background-image: url(assets/praia.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    gap: 24px;
+}
+
+.folder__titulo{
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--branco-texto);
+    text-shadow: 2px 2px 10px black
+}
+
+.folder__botao{
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--verde-texto);
+    background-color: var(--branco-texto);
+    padding: 24px;
+    border-radius: 64px;
+    box-shadow: 4px 15px 30px rgba(0, 0, 0, 0.311);
+}
+
+.hoteis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 0 64px 0;
+    background-color: var(--bege-fundo);
+}
+
+.hoteis__titulo{
+    font-family: var(--fonte-principal);
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--preto-texto);
+}
+
+.hoteis__descricao{
+    font-family: var(--fonte-principal);
+    font-size: 20px;
+    color: var(--cinza-texto);
+}
