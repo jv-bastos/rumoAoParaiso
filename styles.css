@@ -168,6 +168,33 @@
     padding: 40px 56px;
 }
 
+.maracajau__reservar,
+.eletrobeach__reservar{
+    display: flex;
+    gap: 8px;
+    padding-top: 16px;
+}
+
+.reservar__data{
+    font-family: var(--fonte-principal);
+    color: var(--verde-texto);
+    padding-top: 2px;
+}
+
+.maracajau__botao,
+.eletrobeach__botao{
+    padding-top: 30px;
+}
+
+.botao__infos{
+    font-family: var(--fonte-principal);
+    color: var(--branco-texto);
+    text-decoration: none;
+    background-color: var(--verde-botoes);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
 .folder{
     background-image: url(assets/praia.png);
     background-size: cover;
@@ -219,4 +246,62 @@
     font-family: var(--fonte-principal);
     font-size: 20px;
     color: var(--cinza-texto);
+}
+
+.rodape{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 80px 100px;
+    background-color: var(--bege-fundo);
+}
+
+.rodape__infos{
+    padding-right: 220px;
+}
+
+.infos__nome{
+    font-family: var(--fonte-nome);
+    font-size: 40px;
+    color: var(--preto-texto);
+}
+
+.infos__descricao{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    color: var(--cinza-texto);
+    padding-top: 20px;
+}
+
+.infos__direitos{
+    font-family: var(--fonte-principal);
+    font-size: 13px;
+    color: var(--cinza-texto);
+    padding-top: 72px;
+}
+
+.rodape__botoes{
+    padding: 50px 0 0 220px;
+    display: flex;
+    gap: 80px;
+}
+
+.botoes__colunas{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    color: #222222;
+}
+
+.botoes__redes{
+    display: flex;
+    font-family: var(--fonte-principal);
+    color: var(--cinza-texto);
+    padding: 72px 0 0 220px;
+    gap: 5px;
+}
+
+.redes__texto{
+    padding-right: 10px;
 }
